@@ -1,0 +1,33 @@
+/*Standard CSS*/
+.container
+{
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: space-around;
+}
+.box
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    height: 120px;
+    width: 120px;
+}
+/*CSS that will activate when the screen is 700px or less*/
+@media only screen and (max-width:700px)
+{
+    .container
+    {
+        display: block;
+    }
+    .box
+    {
+        border-radius: 60px;
+        background-color: red;
+        margin: auto;
+        border-style: dashed;
+    }
+}
